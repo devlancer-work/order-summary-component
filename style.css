@@ -1,0 +1,177 @@
+:root {
+    font-size: 62.5%;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+img {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pale-blue);
+    overflow: hidden;
+    position: relative;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+    background-position: 0% -50%;
+    background-size: 100%;
+}
+
+/* Component box */
+.component-box {
+    width: 45rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.8rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.component-text {
+    padding: 3rem 1rem;
+}
+.heading {
+    font-size: 2.8rem;
+    font-weight: 900px;
+    margin-bottom: 1.5rem;
+    color: var(--dark-blue);
+}
+.paragraph {
+    width: 80%;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.plan-container {
+    width: 38rem;
+    justify-content: flex-start;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: var(--very-pale-blue);
+    margin-bottom: 2.5rem;
+}
+.price {
+    margin-left: 1.8rem;
+    margin-right: 8rem;
+    align-items: flex-start;
+}
+.price-text p {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+.price-number p {
+    font-size: 1.8rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+.change a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.proceed {
+    width: 38rem;
+    background-color: var(--bright-blue);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1rem 1rem 0.2rem rgba(56, 41, 224, 0.4);
+}
+.proceed-btn {
+    width: 100%;
+    text-decoration: none;
+    color: var(--very-pale-blue);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cancel-btn {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+/* attribution */
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+    .component-box {
+        width: 30rem;
+    }
+    .heading {
+        font-size: 2.5rem;
+
+    }
+    .paragraph {
+        width: 85%;
+        font-size: 1.4rem;
+    }
+    .music {
+        width: 4rem;
+    }
+    .plan-container {
+        width: 27rem;
+        padding: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    .price {
+        margin-right: 3rem;
+    }
+    .price-text p{
+        font-size: 1.4rem;
+    }
+    .price-number p {
+        font-size: 1.4rem;
+    }
+    .change a {
+        font-size: 1.4rem;
+    }
+    .proceed {
+        width: 27rem;
+    }
+    .proceed-btn {
+        font-size: 1.4rem;
+        padding: 1.5rem;
+    }
+    .cancel-btn {
+        font-size: 1.4rem;
+    }
+}

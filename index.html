@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <main role="main">
+    <div class="overlay flex">
+      <div class="component-box flex column" role="component-box">
+
+        <div class="component-image">
+          <img src="./images/illustration-hero.svg" alt="illustration Image">
+        </div>
+
+        <div class="component-text flex column">
+          <h3 class="heading">Order Summary</h3>
+          <p class="paragraph"> You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+
+          <!-- Plan -->
+          <div class="plan-container flex" role="plan-container">
+            <div class="music">
+              <img src="./images/icon-music.svg" alt="Music Image">
+            </div>
+            <div class="price flex column">
+              <div class="price-text">
+                <p>Annual Plan</p>
+              </div>
+              <div class="price-number">
+                <p>$59.99/year</p>
+              </div>
+            </div>
+            <div class="change"><a href="#" role="change-plan">Change</a></div>
+          </div>
+
+          <!--  proceed btn  -->
+          <div class="proceed flex">
+            <a href="#" class="proceed-btn" role="proceed-btn">Proceed to Payment</a>
+          </div>
+
+          <!-- Cancel btn -->
+          <a href="#" class="cancel-btn" role="cancel-order">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/devlancer-work">DevLancer</a>.
+    </div>
+  </main>
+</body>
+
+</html>
